@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart Travel Planner</h1>
+        <p>Plan your trip and estimate your travel budget easily</p>
+
+        <form id="travelForm">
+            <label>From</label>
+            <input type="text" id="from" placeholder="Starting city" required>
+
+            <label>To</label>
+            <input type="text" id="to" placeholder="Destination city" required>
+
+            <label>Number of Days</label>
+            <input type="number" id="days" placeholder="Enter days" required>
+
+            <label>Mode of Transport</label>
+            <select id="transport">
+                <option value="bus">Bus</option>
+                <option value="train">Train</option>
+                <option value="flight">Flight</option>
+            </select>
+
+            <button type="submit">Calculate Budget</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
